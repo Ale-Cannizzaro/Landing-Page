@@ -19,6 +19,8 @@ button {
 .border-bar {
     width: 100%;
     box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.062);
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {
