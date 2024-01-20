@@ -1,7 +1,8 @@
 body {
     display: flex;
-    background-color: #515c6b;
+    background-color: #fdfdfde7;
     flex-direction: column;
+    align-items: center;
     margin: 0;
 }
 
@@ -9,29 +10,39 @@ button {
     width: 100px;
     border: none;
     border-radius: 8px;
-    background: #3882F6;
+    background: #969696c7;
     padding: 8px;
-    margin: 5px;    
+    margin: 5px;   
+    font-family: "Sen", sans-serif; 
+}
+
+.border-bar {
+    width: 100%;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.062);
 }
 
 .navbar {
+    width: 1200px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    color: aliceblue;
-    font-size: 24px;
+    color: rgb(37, 37, 37);
+    font-family: "Red Rose", serif;
+    font-size: 48px;
+    font-weight: 400;
     flex: 1;
-    margin-left: 20%;
     padding: 20px;
 }
 
 .header-links {
     flex: 1;
     display: flex;
-    margin-right: 10%;
     margin-top: 10px;
+    margin-right: 20px;
     padding-top: 20px;
     gap: 20px;
     justify-content: flex-end;
@@ -39,21 +50,25 @@ button {
 
 .header-links a {
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(37, 37, 37);
+    font-family: "Sen", sans-serif;
+    font-weight: 400;
 }
 
 .preview {
     height: 250px;
-    width: 100%;
+    width: 1200px;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .preview-left {
+    color: rgba(37, 37, 37, 0.925);
     width: 300px;
     margin-left: 10%;
     flex: 1;
@@ -62,15 +77,18 @@ button {
 }
 
 .preview-left h1 {
-    font-family: "Cormorant", serif;
+    font-family: "Sen", sans-serif;
+    font-weight: 300;
     font-size: 48px;
-    font-weight: 500;
     margin: 0px;
 }
 
 .preview-left p {
-    margin-bottom: 0;
-    font-size: 18px;
+    font-family: "Sen", sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .move-button {
@@ -79,8 +97,12 @@ button {
     align-items: flex-start;
 }
 
+.move-button button {
+    margin: 0;
+    color: white;
+}
 
-.preview-left a {
+ a {
     text-decoration: none;
     color: aliceblue;
 }
@@ -92,25 +114,31 @@ button {
     margin-left: 60px;
     padding: 20px;
     display: flex;    
-    background-color: rgb(49, 49, 49);
+    background-color: rgba(49, 49, 49, 0.384);
     justify-content: center;
     align-items: center;
 }
 
 .preview-right h4 {
+    font-family: "Sen", sans-serif;
     color: white;
 }
 
 .certified-reviews {
-    background-color: rgb(250, 250, 250);
+    width: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(247, 247, 247);
 }
 
 .certified-reviews h3 {
     font-size: 30px;
     margin-bottom: 0;
+    font-family: "Sen", sans-serif;
+    font-weight: 500;
+    color: rgba(37, 37, 37, 0.925);    
 }
 
 .card-container {
@@ -134,19 +162,24 @@ button {
 .card {
     height: 120px;
     width: 120px;
+    border: 2px;
     border-radius: 10px;
     border-style: solid;
-    border-color: #3882F6;
+    border-color: #5f5f5f;
     box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.13);
 }
 
 .card-text {
+    font-family: "Sen", sans-serif;
+    font-weight: 300;
+    color: rgba(37, 37, 37, 0.925);
     flex: 1;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .quote {
+    width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -162,15 +195,77 @@ button {
 }
 
 .quote p {
+    font-family: "Sen", sans-serif;
     font-weight: 100;
-    font-style: italic;
+    color: rgba(37, 37, 37, 0.925);
     margin: 0;
     width: 745px;
     font-size: 36px;
 }
 
 .quote h4 {
+    color: rgba(15, 15, 15, 0.925);
     margin: 0;
     align-self: flex-end;
+    font-family: "Sen", sans-serif;
     font-size: 22px;
+}
+
+.call-to-action {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipient {
+    width: 700px;
+    border-radius: 6px;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.164);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    background-color: #0c0c0ce0;
+    padding: 30px;
+}
+
+.recipient-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    font-family: "Sen", sans-serif;
+}
+
+.recipient-left h4{
+    margin: 0;
+    flex: 1;  
+}
+
+.recipient-left p{
+    margin: 0;
+    flex: 1;
+    font-size: 14px;
+}
+
+.recipient-right button {
+    padding: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: #2b2b2b;
+
+}
+
+.footer {
+    width: 100%;
+    background-color:rgb(233, 233, 233);
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: rgb(37, 37, 37);
+    font-family: "Sen", sans-serif;
 }
